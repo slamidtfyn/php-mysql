@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  web:
+    build: ./app/
+    depends_on:
+      - db
+    ports:
+     - "8000:8000"
+    volumes:
+      - ./app:/usr/src/myapp
+      
+  db:
+    build: ./db/
+    environment: 
+      MYSQL_ROOT_PASSWORD: 'my-secret-pw'
+      MYSQL_DATABASE: db1
+      MYSQL_USER: web
+      MYSQL_PASSWORD: 1Qaz2wsx
+    

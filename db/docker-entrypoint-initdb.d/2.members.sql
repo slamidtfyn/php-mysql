@@ -1,0 +1,1 @@
+insert into member (name) values ('member1'),('member2')
