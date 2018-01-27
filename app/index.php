@@ -12,5 +12,6 @@ $sql = 'SELECT id,name
 
 $sth = $dbh->prepare("select * from member");
 $sth->execute();
-$members = $sth->fetchAll();
-print_r($members);
+$members = $sth->fetchAll();    
+
+echo "Hello world";
