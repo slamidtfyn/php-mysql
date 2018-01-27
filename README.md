@@ -13,3 +13,4 @@ Template for php and mysql setup with docker-compose
 1. add/remove scripts in db/init to create tables and data
 2. edit environment variables in /db/database.env to preferred settings
 3. edit app/config.php to match database settings
+4. add/edit php source in /app/ to create website
